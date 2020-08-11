@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: wheat;
+    background-image: url(starred.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+}
+
+header {
+    text-align: center;
+    font-size: 150%;
+}
+
+header h1 {
+    text-shadow: rgb(132, 81, 180) 4px 4px;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 100%;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    text-shadow: rgb(132, 81, 180) 2px 2px;
+}
+header img {
+
+    width: 12%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+header a {
+    text-decoration: none;
+    color: wheat;
+}
+header a:hover {
+    cursor: pointer;
+    font-size: 105%;
+}
+
+main {
+    margin: 0 20% 0 20%;
+}
+main h1 {
+    text-shadow: rgb(43, 41, 44) 4px 4px;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    padding-top:20px;
+    text-align: center;
+    width: 20%;
+    height: 150px;
+    border: 2px solid black;
+    box-shadow: rgb(134, 70, 10) 3px 3px 5px;
+}
+article a {
+    font-size: large;
+    text-decoration: none;
+    color: wheat;
+    display: block;   
+}
+article button {
+    border: none;
+    font-size: 150%;
+    color: wheat;
+    background-color: rgb(146, 65, 11);
+    padding: 5% 15%;
+    border-radius: 10%;
+    box-shadow: rgb(48, 24, 13) 2px 2px 1px;
+}
+button:hover {
+padding: 5% 20%;
+}
+
+@media screen and (max-width: 942px) {
+    main {
+        margin: 0 10% 0 10%;
+    }
+    header img {
+        width: 20%;
+    }    
+}
+@media screen and (max-width: 710px) {
+    article button {
+        padding: 3% 6%;
+    }
+    button:hover {
+        padding: 3% 8%;
+        }
+}
+@media screen and (max-width: 665px) {
+    article {
+      display: block;
+    }
+    div {
+        display: inline-block;
+        width: 35%;
+        margin: 7%;
+    }
+article p {
+    font-size: small;
+    font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header li {
+        font-size: small;
+    }
+    header img {
+        width: 25%;
+    }    
+}
+@media screen and (max-width: 400px) {
+    header nav ul {
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+    main {
+        margin: 0 5% 0 5%;
+    }
+    main h1 {
+        font-size: 125%;
+    }
+    header img {
+        width: 35%;
+    }    
+}

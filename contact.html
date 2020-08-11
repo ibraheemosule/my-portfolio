@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MY CONTACT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css\contact.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <img src="images\picture3.jpg" alt="my picture">
+        </header>
+        <main>
+            <h1>CONTACT ME <hr> </h1>
+            <article>
+                <div>
+                    <p>GITHUB</p>
+                    <button><a href="https://github.com/sulayibraheem" target="_blank">click here</a></button>
+                </div>
+                <div> <p>LINKEDIN</p>
+                    <button><a href="https://www.linkedin.com/in/ibrahim-sule-23478919a" target="_blank">click here</a></button></div>
+                <div><p>EMAIL</p>
+                    <button><a href="mailto:sulayibraheem@gmail.com" target="_blank">click here</a></button></div>
+                <div  class="phone"><p>PHONE CALL</p>
+                    <button><a href="tel:+2348067153177">click here</a></button></div>
+            </article>
+
+        </main>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+
+            var phone = document.getElementsByClassName("phone")[0];
+            function show(){
+                phone.innerHTML = "+2348067153177"
+            };
+            phone.addEventListener("click", show);
+
+        </script>
+    </body>
+</html>

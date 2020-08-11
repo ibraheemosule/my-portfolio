@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: wheat;
+    background-image: url(starblue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: cursive;
+}
+
+header {
+    text-align: center;
+    font-size: 150%;
+}
+
+header a {
+    text-decoration: none;
+    color: wheat;
+}
+
+main {
+    margin: 0 20% 0 20%;
+}
+
+main h1 {
+    text-shadow: rgb(132, 81, 180) 4px 4px;
+}
+main p {
+    text-align: justify;
+    text-indent: 5%;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 100%;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    text-shadow: rgb(132, 81, 180) 2px 2px;
+}
+header img {
+
+    width: 12%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+a:hover {
+    cursor: pointer;
+    font-size: 105%;
+}
+
+@media screen and (max-width: 880px) {
+    main {
+        margin: 0 10% 0 10%;
+    }
+    header img {
+        width: 20%;
+    }    
+}
+@media screen and (max-width: 500px) {
+    header li {
+        font-size: small;
+    }
+    header img {
+        width: 25%;
+    }    
+}
+@media screen and (max-width: 400px) {
+    header nav ul {
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+    main {
+        margin: 0 5% 0 5%;
+    }
+    main h1 {
+        font-size: 125%;
+    }
+    header img {
+        width: 35%;
+    }    
+}
