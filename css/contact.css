@@ -7,7 +7,7 @@ body {
     background-image: url(starred.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: cursive;
+    font-family: Lato, "Lucida Grande", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
