@@ -5,7 +5,7 @@
 body {
     color: wheat;
     background-image: url(star.jpg);
-    font-family: cursive;
+    font-family: Lato, "Lucida Grande", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
