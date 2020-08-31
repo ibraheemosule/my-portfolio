@@ -46,6 +46,7 @@ header nav ul {
 header nav ul li {
     text-shadow: rgb(132, 81, 180) 2px 2px;
 }
+
  a {
     text-decoration: none;
     color: wheat;
@@ -72,10 +73,12 @@ article p span {
 }
 
 main article button {
-    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(31, 10, 83);
+    border: 1px inset gray;
     font-size: 150%;
     color: wheat;
-    background-color: rgb(31, 10, 83);
+    background-color: rgba(190, 171, 238, 0.52);
     padding: 0.5%;
     padding-top: 0.3%
 }
