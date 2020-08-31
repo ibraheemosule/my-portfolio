@@ -35,7 +35,7 @@
                 <div><p>EMAIL</p>
                     <button><a href="mailto:sulayibraheem@gmail.com" target="_blank">click here</a></button></div>
                 <div  class="phone"><p>PHONE CALL</p>
-                    <button><a href="tel:+2348067153177">click here</a></button></div>
+                    <button class="call"><a href="tel:+2348067153177">click here</a></button></div>
             </article>
 
         </main>
@@ -45,9 +45,10 @@
         
         <script>
 
-            var phone = document.getElementsByClassName("phone")[0];
+            var phone = document.getElementsByClassName("call")[0];
             function show(){
                 phone.innerHTML = "+2348067153177"
+                phone.style.fontSize = "x-small";
             };
             phone.addEventListener("click", show);
 
