@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-    text-shadow: rgb(132, 81, 180) 4px 4px;
+    text-shadow: 2.4px 2.4px rgb(132, 81, 180);
     animation-name: flunctuate;
     animation-duration: 700ms;
     animation-iteration-count: infinite;
@@ -44,7 +44,7 @@ header nav ul {
 }
 
 header nav ul li {
-    text-shadow: rgb(132, 81, 180) 2px 2px;
+    text-shadow: 1px 1px rgb(132, 81, 180);
 }
 
  a {
@@ -80,8 +80,29 @@ main article button {
     color: wheat;
     background-color: rgba(190, 171, 238, 0.191);
     padding: 0.5%;
-    padding-top: 0.3%
+    padding-top: 0.3%;
+    animation-name: opacity;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+@keyframes opacity {
+    25% {
+        background-color: rgba(170, 143, 240, 0.191);
+    }
+    50% {
+        background-color: rgba(127, 90, 219, 0.5);
+    }
+    75% {
+        background-color:rgba(61, 40, 114, 0.191);
+    }
+    100% {
+        background-color: rgba(23, 13, 49, 0.191);
+    }
+}
+
+
 @media screen and (max-width: 770px) {
     header {
         font-size: 130%;

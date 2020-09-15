@@ -16,7 +16,7 @@ header {
 }
 
 header h1 {
-    text-shadow: rgb(132, 81, 180) 4px 4px;
+    text-shadow: 3px 3px rgb(132, 81, 180);
 }
 
 
@@ -28,7 +28,7 @@ header nav ul {
 }
 
 header nav ul li {
-    text-shadow: rgb(132, 81, 180) 2px 2px;
+    text-shadow:   1px 1px rgb(132, 81, 180);
 }
 header img {
 
@@ -50,7 +50,7 @@ main {
     margin: 0 20% 0 20%;
 }
 main h1 {
-    text-shadow: rgb(43, 41, 44) 4px 4px;
+    text-shadow: 2px 2px rgb(43, 41, 44);
 }
 
 article {

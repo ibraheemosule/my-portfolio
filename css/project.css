@@ -35,10 +35,10 @@ main {
 }
 
 main h1, h3 {
-    text-shadow: rgb(132, 81, 180) 4px 4px;
+    text-shadow: 2px 2px rgb(132, 81, 180);
 }
 h3 {
-    text-shadow: rgb(132, 81, 180) 2px 2px;
+    text-shadow: 2px 2px rgb(132, 81, 180);
     text-align: center;
 }
 main p {
@@ -55,7 +55,7 @@ header nav ul {
 }
 
 header nav ul li {
-    text-shadow: rgb(132, 81, 180) 2px 2px;
+    text-shadow:  1px 1px rgb(132, 81, 180);
 }
 header img {
 
