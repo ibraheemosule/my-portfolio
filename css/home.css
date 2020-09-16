@@ -43,6 +43,10 @@ header nav ul {
     justify-content: space-around;
 }
 
+header nav ul li{
+    cursor: pointer;
+}
+
 header nav ul li {
     text-shadow: 1px 1px rgb(132, 81, 180);
 }
@@ -53,7 +57,7 @@ header nav ul li {
 }
 
 a:hover {
-    cursor: pointer;
+    cursor: inherit;
     font-size: 105%;
 }
 
@@ -78,27 +82,18 @@ main article button {
     border: 1px inset gray;
     font-size: 150%;
     color: wheat;
-    background-color: rgba(190, 171, 238, 0.191);
-    padding: 0.5%;
-    padding-top: 0.3%;
+    background-color: rgba(13, 3, 39, 0.253);
+    padding: 2px 10px;
+    padding-bottom: 4px;
     animation-name: opacity;
-    animation-duration: 700ms;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 @keyframes opacity {
-    25% {
-        background-color: rgba(170, 143, 240, 0.191);
-    }
     50% {
-        background-color: rgba(127, 90, 219, 0.5);
-    }
-    75% {
-        background-color:rgba(61, 40, 114, 0.191);
-    }
-    100% {
-        background-color: rgba(23, 13, 49, 0.191);
+        background-color:  rgb(0, 0, 0);
     }
 }
 
@@ -147,9 +142,15 @@ main article button {
         margin-right: 30px;
     }
     header {
-        font-size: 200%;
+        font-size: 240%;
     }
     header img {
         width: 25%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        font-size: 220%;
     }
 }

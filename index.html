@@ -38,11 +38,26 @@
             <p>Hi, Welcome to my page.</p>
             <p>My name is <span>Ibrahim Sule</span> and I'm a frontend Developer</p>
             <p>You want to know more about me? simply click through the options in the nav section above or click below</p>
-            <button><a href="contact.html">contact me</a></button>
+            <button  class="show"><a href="contact.html">contact me</a></button>
         </article>
     </main>
 
-</body>
-</body>
+<script>
+    let show = document.getElementsByClassName('show')[0];
 
+    function blink(element, timeout){
+    
+        element.style.visibility = "visible";
+    let a = setTimeout(() => {
+            element.style.visibility = "hidden";
+        }, timeout);
+       let b =  setTimeout(() => {
+           blink(element, timeout)
+        }, timeout * 2);
+    };
+    blink(show, 500);
+
+
+</script>
+</body>
 </html>

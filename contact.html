@@ -52,6 +52,21 @@
             };
             phone.addEventListener("click", show);
 
+            let button = document.getElementsByTagName("button");
+            let color = ["rgb(46, 44, 43, 0.4)","rgb(146, 65, 11, 0.4)","rgb(48, 24, 13, 0.4)","rgba(2, 57, 82, 0.459)","rgb(63, 9, 2, 0.4)","rgb(0, 0, 0)","rgba(27, 146, 11, 0.431)","rgba(145, 15, 134, 0.637)"];
+
+            setInterval(() => {
+                let num1 = Math.floor(Math.random()*8);
+                let num2 = Math.floor(Math.random()*8);
+                let num3 = Math.floor(Math.random()*8);
+                let num4 = Math.floor(Math.random()*8);
+
+                button[0].style.backgroundColor = color[num1];
+                button[1].style.backgroundColor = color[num2];
+                button[2].style.backgroundColor = color[num3];
+                button[3].style.backgroundColor = color[num4];
+            }, 1000);
+
         </script>
     </body>
 </html>
