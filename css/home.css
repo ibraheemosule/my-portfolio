@@ -89,6 +89,14 @@ main article button {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    cursor: pointer;
+}
+
+div {
+    cursor: pointer;
+    width: 175px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @keyframes opacity {

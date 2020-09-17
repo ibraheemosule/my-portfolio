@@ -74,7 +74,7 @@ article a {
     display: block;   
 }
 article button {
-    border: 2px outset rgba(43, 41, 44, 0.5);
+    border: 2px inset rgba(43, 41, 44, 0.849);
     font-size: 150%;
     color: wheat;
     background-color: rgb(146, 65, 11);
