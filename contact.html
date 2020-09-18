@@ -60,8 +60,8 @@
             phone.addEventListener("click", show);
 
             let button = document.getElementsByTagName("div");
-            let color = ["rgb(46, 44, 43, 0.1)","rgb(146, 65, 11, 0.1)","rgb(48, 24, 13, 0.1)","rgba(2, 57, 82, 0.1)",
-            "rgb(63, 9, 2, 0.1)","rgb(0, 0, 0, 0.2)","rgba(27, 146, 11, 0.1)","rgba(145, 15, 134, 0.1)",
+            let color = ["rgb(46, 44, 43, 0.3)","rgb(146, 65, 11, 0.2)","rgb(48, 24, 13, 0.6)","rgba(2, 57, 82, 0.2)",
+            "rgb(63, 9, 2, 0.2)","rgb(0, 0, 0, 0.5)","rgba(27, 146, 11, 0.2)","rgba(145, 15, 134, 0.2)",
             "rgba(113, 195, 6, 0.1)","rgba(245, 157, 245, 0.1)","rgba(81, 83, 180, 0.1)"];
 
             setInterval(() => {
@@ -74,6 +74,9 @@
                 button[1].style.backgroundColor = color[num2];
                 button[2].style.backgroundColor = color[num3];
                 button[3].style.backgroundColor = color[num4];
+                
+                console.log(num1);
+
             }, 1000);
 
         </script>

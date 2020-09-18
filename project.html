@@ -9,6 +9,7 @@
         <title>MY PROJECTS</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="css\project.css">
     </head>
     <body>
@@ -26,44 +27,241 @@
         </header>
         <Main>
             <h1>MY PROJECTS<hr></h1>
-            <article>
+            <article> 
+
                 <h3>WEB APPLICATIONS</h3>
                 <ul>
-                <li>A simple calculator web application using HTML, CSS and JAVASCRIPT.
-<span>LINK: <a href="https://ios-calculatorapp.netlify.app/" target="_blank">CLICK HERE</a></span></li>
-        
-<li>A replica of the google Chrome jump game created with a better UI/UX experience using HTML, CSS and JAVASCRIPT.
-    <span>LINK: <a href="https://ios-jumpgame.netlify.app/" target="_blank">CLICK HERE</a></span></li>
+                <li><h4>A CALCULATOR WEB APP</h4> <a href="#calculator" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+                    <div class="accordion-content" id="calculator">
+                        <h5>REASON FOR CREATING THIS PROJECT</h5>
+                            <p>This project was created with the aim of helping smartphone and desktop users make quick calculations as 
+                           they go about their daily business. We make calculations in our every day lives although, the extrimity might
+                        differ. Nevertheless, we still engage in it either consciously or subconsciously hence, I decided to add a little
+                         more to this project by making it's UX easy to navigate and it's UI user friendly with the hope that it makes life easier for some individuals.</p> 
 
-    <li>A receipt generator and print option for supermarkets, grocery stores etc.
-        <span>LINK: <a href="https://ios-receiptgenerator.netlify.app/ " target="_blank">CLICK HERE</a></span></li>
+                        <h5>TOOLS REQUIRED</h5>
+                        <p>CSS, HTML, javaScript, VS Code Editor, Git, Github, Netlify etc.</p>
+
+                        <h5>CHALLENGES FACED</h5>
+                        <p>This project marks my first task where I've had to use more of JS than HTML and CSS. The HTML did not give much difficulty as 
+                            opposed to the CSS and JS with the latter proving to be the most challenging. I had issues on the most suitable layout to use so i tried using
+                             the flex display since it's what I'm most comfortable with but I wasn't getting the grid view I needed so I had to revise Grid display and used
+                              it for this project. 
+                        </p>
+                        <p> In the JS aspect, I had issues with the "=" and the "X<sup>n</sup>"  functionality. This prompted me to revise JS basics
+                         which aided my brekthrough in this project. Link to the project can be found below.</p>
+
+                        <span>LINK: <a href="https://ios-calculatorapp.netlify.app/" target="_blank">CLICK HERE <i class="fas fa-external-link-square-alt"></i></a></span>
+                    </div>
+                </li>
         
-    <li>A todo list that keeps track of your activities. Created this without Reactjs.
-        <span>LINK: <a href="https://ios-todolist.netlify.app/ " target="_blank">CLICK HERE</a></span></li>
-        </ul>
+<li>
+    <h4>A CHEETAH JUMP GAME</h4> <a href="#jumpGame" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+    <div class="accordion-content" id="jumpGame">
+        <h5>REASON FOR CREATING THIS PROJECT</h5>
+            <p>As a youth, the memory of my teenage years are still very clear as day. Having little to do with so much time occupied by boredom is something
+                that hunts lots of teenagers out there. This game was created as a remedy to solve this problem. It an interesting project, one that tested my 
+                creative and cognitive thinking. It looks quite similar to the google chrome game but with a bit better UIUX/ experience.
+            </p> 
+
+        <h5>TOOLS REQUIRED</h5>
+        <p>CSS, HTML, javaScript, VS Code Editor, Git, Github, Netlify etc.</p>
+
+        <h5>CHALLENGES FACED</h5>
+        <p> Before this project, I never knew what it's like to get lost in the DOM. With the help of this project, I got a first hand experience on how frustrating and problematic it can be. 
+            There were lot of obstacles I had to jump in order to successfully complete this project <small>"pun definitely intended"</small>. I stumbled upon a glitch 
+            which happens whenever the Character makes a jump. Took me 3 days to solve this when all that was required was just to use a simple return statement.
+        </p>
+        <p> For the character and Cheetah's movements, I used CSS transition to create a form of dynamism and perfect speed for both the jumping height of the character and the 
+            cheetah's speed. Trust me, It's not as easy as it sounds. Link to the project can be found below.</p>
+
+    <span>LINK: <a href="https://ios-jumpgame.netlify.app/" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+    </div>
+</li>
+
+    <li>
+        <h4>A RECEIPT GENERATOR</h4> <a href="#receipt" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+
+        <div class="accordion-content" id="receipt">
+            <h5>REASON FOR CREATING THIS PROJECT</h5>
+                <p> One thing a business personnel values is proof of transaction. With the ever growing business innovations and the daily buying and selling activities. Business
+                     Enterprises such as supermarkets, grocery stores etc. needs an easy to use receipt generator tool to help them allocate proof of transactions. Hence, I embarked on this project to help create 
+                     a solution to this issue.</p> 
+    
+            <h5>TOOLS REQUIRED</h5>
+            <p>CSS, HTML, javaScript, VS Code Editor, Git, Github, Netlify etc.</p>
+    
+            <h5>CHALLENGES FACED</h5>
+            <p> This project I find quite intruging as it exposed me to a lot of things in JS. Before, this project, I never knew how to print a html element content such as a div content.
+                For the css, I used grid display as it was the most suitable for this kind of project. I had issues trying to sort the calculations and the table element that should
+                 be printed out. Also, Since the values of an input tag are strings, I had to turn them to numbers using the <code>parseInt()</code> function.
+            </p>
+            <p> In conclusion, I had problems dealing with the DOM, but since I already possess adequate knowledge about the basics, I was able to solve the problems
+                 thrown at me swiftly. Follow the link below to view the project.</p>
+    
+        <span>LINK: <a href="https://ios-receiptgenerator.netlify.app" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+        </div>
+    </li>
+        
+    <li><h4>A TO DO LIST PAGE</h4> <a href="#todo" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+        
+        <div class="accordion-content" id="todo">
+            <h5>REASON FOR CREATING THIS PROJECT</h5>
+                <p> Every successful developer once had a mentor or someone they looked up to. As a junior developer, mine is no different. This project was 
+                    inspired by my mentor. He told in order to appreciate REACT, I need to do a to do list vanilla javaScript. Hence, I commenced on the project and 
+                    in the end, I was quite pleased with the result of this project and I hope you are too.
+                </p> 
+                <p>In view of the above, I am opened to review, remark and suggestions. You can reach me at the contact page located at the nav section</p>
+    
+            <h5>TOOLS REQUIRED</h5>
+            <p>CSS, HTML, javaScript, VS Code Editor, Git, Github, Netlify etc.</p>
+    
+            <h5>CHALLENGES FACED</h5>
+            <p> This project made me learn more about the DOM. I had a major challenge in getting to highlight the checked options and move them to another section
+                 in the page. Another challenge faced was coming up with a unique UI/UX thats quite easy to navigate through and also welcoming.</p>
+            <p>Personally, I find CSS quite convenient to use than bootstrap, because it gives you total control of the changes in the styling of your code. So,
+                 since this is the first project I ever used bootstrap with, I wasn't so comfortable using classes in every html tag I created. 
+                 Hopefully, this will be just a one-time feeling. Follow the link below to view the project.</p>
+    
+        <span>LINK: <a href="https://https://ios-todolist.netlify.app/" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+        </div>
+       </li>
+    </ul>
         <hr>
 
                 <h3>RESPONSIVE WEBSITES/LANDING PAGES</h3>
+
                 <ul>
-                <li>A personal responsive Liverpool website to put into practice my HTML, CSS and JAVASCRIPT skills.
-<span>LINK: <a href="https://ios-liverpoolpage.netlify.app/" target="_blank">CLICK HERE</a></span></li>
-
-<li>Revealbot landing page challenge picked from frontend mentors.
-    <span>LINK: <a href="https://ios-revealbot.netlify.app/" target="_blank">CLICK HERE</a></span></li>
+                <li>
+                    <h4>PERSONAL LIVERPOOL SITE</h4> <a href="#liverpool" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
         
-<li>A responsive NYSC landing page with my resume with an image slider using HTML, CSS and JAVASCRIPT.
-    <span>LINK: <a href="https://mynyscpage.netlify.app/" target="_blank">CLICK HERE</a></span></li>
+                    <div class="accordion-content" id="liverpool">
+                        <h5>REASON FOR CREATING THIS PROJECT</h5>
+                            <p> Well, what can I say? From our coding cradle stage of <code>console.log("Hello World");</code> to the level we are now, It gets
+                                to a point where you decide it's time to put into practice what you learnt. This was the first project I did after completing my
+                                HTML and CSS lessons. Although, I had gone back to reform this project so it looks slightly better that it once was. </p> 
+                           
+                
+                        <h5>TOOLS REQUIRED</h5>
+                        <p>CSS, HTML, javaScript, VS Code Editor, Git, Github, Netlify etc.</p>
+                
+                        <h5>CHALLENGES FACED</h5>
+                        <p> As at when I created created this page, I knew nothing about responsive design, the issues I had then was remembering to put the semi-colon 
+                            at the end of my CSS stylings and trying of figure out which html code require closing tags. Looking back at those moments now, it was quite an 
+                            experience. Follow the link below to view the project.
+                        </p>
+                
+                    <span>LINK: <a href="ios-liverpoolpage.netlify.app" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+                    </div>
+                </li>
 
-    <li>A responsive page of insure.com frontend mentors page.
-        <span>LINK: <a href="https://myinsurepage.netlify.app/ " target="_blank">CLICK HERE</a></span></li>
-        </ul>
+<li>
+    <h4>REVEALBOT PAGE</h4> <a href="#revealbot" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+        
+    <div class="accordion-content" id="revealbot">
+        <h5>REASON FOR CREATING THIS PROJECT</h5>
+            <p>This project, I found on <a href="https://frontendmentors.io" target="_blank">frontend mentors website</a>. The project proved to be challenging and I 
+                knew it would help me improve my CSS and HTML skills.</p> 
+           
+
+        <h5>TOOLS REQUIRED</h5>
+        <p>CSS, HTML, javaScript, Bootstrap, VS Code Editor, Git, Github, Netlify etc.</p>
+
+        <h5>CHALLENGES FACED</h5>
+        <p> Initially, the finished project looked good on a devices with large viewports but since I didn't make the page responsive, 
+            It looked awful on smaller devices. Hence, I had to return to make the page responsive and added the collapsible navbar to it using bootstrap.
+            Follow the link below to view the project.
+        </p>
+
+    <span>LINK: <a href="https://ios-revealbot.netlify.app" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+    </div>
+</li>
+        
+<li>
+    <h4>NYSC STORY PAGE</h4> <a href="#nysc" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+        
+    <div class="accordion-content" id="nysc">
+        <h5>REASON FOR CREATING THIS PROJECT</h5>
+            <p>I applied for a role of App Developer Intern a <a href="https://bincom.net">Bincom</a> where the successful applicants were tasked to create 
+                a simple page that includes our resume without the use of bootstrap. I came up with this page and added an image slider to it just to 
+            make it unique</p> 
+           
+
+        <h5>TOOLS REQUIRED</h5>
+        <p>CSS, HTML, javaScript, VS Code Editor, Git, Github, Netlify etc.</p>
+
+        <h5>CHALLENGES FACED</h5>
+        <p> This was my first project that I had to use javaScript. Creating an image slider for the first time was a huge task for me then. Also, 
+            I made the page responsive using mediaQuery, made the navbar collapsible and added a dropdown menu to the settings button. Follow the link 
+            below to view the project.
+        </p>
+
+    <span>LINK: <a href="https://ios-nyscpage.netlify.app" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+    </div>
+</li>
+
+    <li>
+        <h4>INSURE LANDING PAGE</h4> <a href="#insure" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+        
+        <div class="accordion-content" id="insure">
+            <h5>REASON FOR CREATING THIS PROJECT</h5>
+                <p>This project was picked up from <a href="https://frontendmentors.io" target="_blank">frontend mentors website</a> as a challenge. The project proved to be challenging and I 
+                    knew it would help me improve my CSS and HTML skills.</p> 
+               
+    
+            <h5>TOOLS REQUIRED</h5>
+            <p>CSS, HTML, VS Code Editor, Git, Github, Netlify etc.</p>
+    
+            <h5>CHALLENGES FACED</h5>
+            <p> While working on this page, I had zero knowledge of bootstrap and mediaQuery and needed to make this page responsive. So I picked up mediaQuery 
+                and used this project to learn, make mistakes and correct them. It was a good project to learn responsiveness with.
+            </p>
+    
+        <span>LINK: <a href="https://ios-insurepage.netlify.app" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+        </div>
+</li>
+</ul>
         <hr>
 
         <h3>DESKTOP VIEW ONLY PAGES CREATED (NON-RESPONSIVE PAGES)</h3>
         <ul>
-            <li>Two template pages using HTML and CSS. A task I was assigned to in the HNGi7 internship.
-                <span>LINK 1: <a href="https://thefirsttemplate.netlify.app/" target="_blank">CLICK HERE</a></span>
-                <span>LINK 2: <a href="https://thesecondtemplate.netlify.app/ " target="_blank">CLICK HERE</a></span>
+            <li>
+                <h4>TEMPLATE PAGE</h4> <a href="#template" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+        
+                <div class="accordion-content" id="template">
+                    <h5>REASON FOR CREATING THIS PROJECT</h5>
+                        <p>During my internship at HNGi7, I was tasked to create a desktop-view template page for my group. This was the first of two which I created</p> 
+                       
+            
+                    <h5>TOOLS REQUIRED</h5>
+                    <p>CSS, HTML, VS Code Editor, Git, Github, Netlify etc.</p>
+            
+                    <h5>CHALLENGES FACED</h5>
+                    <p> Aside from working against time, there was not much challenge in building this template page. Link to the page can be found below.
+                    </p>
+            
+                <span>LINK: <a href="https://ios-firsttemplate.netlify.app" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+                </div>
+            </li>
+
+            <li>
+                <h4>TEMPLATE PAGE</h4> <a href="#template2" class="accordion-toggle">READ MORE <i class="fa fa-caret-down"></i></a>
+        
+                <div class="accordion-content" id="template2">
+                    <h5>REASON FOR CREATING THIS PROJECT</h5>
+                        <p>During my internship at HNGi7, I was tasked to create a desktop-view template page for my group. This was the 
+                            second template I created</p> 
+                       
+            
+                    <h5>TOOLS REQUIRED</h5>
+                    <p>CSS, HTML, VS Code Editor, Git, Github, Netlify etc.</p>
+            
+                    <h5>CHALLENGES FACED</h5>
+                    <p> Aside from working against time, there was not much challenge in building this template page. Link to the page can be found below.
+                    </p>
+            
+                <span>LINK: <a href="ios-secondtemplate.netlify.app" target="_blank">CLICK HERE  <i class="fas fa-external-link-square-alt"></i></a></span>
+                </div>
             </li>
 
         </ul>
@@ -72,7 +270,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
         
-        <script src="\C:\Users\user\Desktop\IOS\portfolio\js\about.js" async defer></script>
+               <!--<a href="#content-2" class="accordion-toggle">show more 2</a>
+                <div class="accordion-content" id="content-2">content goes here</div>
+  
+                <a href="#content-3" class="accordion-toggle">show more 2</a>
+                <div class="accordion-content" id="content-3">content goes here</div> --> 
+        
+        <script src="project.js"></script>
     </body>
 </html>
