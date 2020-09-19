@@ -19,6 +19,7 @@ header {
 h4 {
     display: inline-block;
     margin-top: 0;
+    padding-top: inherit;
     font-weight: 700;
     color: rgb(66, 3, 35);
     text-shadow: 0.3px 0.3px  rgba(180, 240, 240, 0.472);
@@ -33,6 +34,7 @@ a {
 .accordion-toggle {
     float: right;
     color: rgb(26, 1, 1);
+    padding-top: inherit;
     font-weight: 600;
     transition: all .5s ease;
 }
@@ -197,3 +199,17 @@ li.list, li.list:last-of-type {
         width: 35%;
     }    
 }
+@media screen and (max-width: 340px) {
+    header li {
+        font-size: x-small;
+    }
+    header img {
+        width: 25%;
+    }
+
+    h4, .accordion-toggle, span a, span, article ul li span a:hover {
+        font-size: x-small;
+    }
+    .accordion-toggle:hover {
+        font-size: x-small;
+    }
