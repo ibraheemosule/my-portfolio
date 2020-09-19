@@ -40,10 +40,12 @@ header img {
 header a {
     text-decoration: none;
     color: wheat;
+    transition: all .7s ease;
 }
 header a:hover {
     cursor: pointer;
-    font-size: 105%;
+    color: rgb(83, 241, 136);
+    text-shadow: 1px 1px rgb(75, 60, 1);
 }
 
 main {

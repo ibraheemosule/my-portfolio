@@ -27,12 +27,20 @@ h4 {
 a {
     text-decoration: none;
     color: wheat;
+    transition: all .5s ease;
 }
 
 .accordion-toggle {
     float: right;
     color: rgb(26, 1, 1);
     font-weight: 600;
+    transition: all .5s ease;
+}
+
+.accordion-toggle:hover {
+    font-size: initial;
+    color: rgba(251, 59, 59, 0.685);
+    text-shadow: 1px 1px rgba(241, 188, 12, 0.459);
 }
 
 .accordion-content {
@@ -52,6 +60,9 @@ a {
     font-weight: 600;
 }
 
+article ul {
+    padding: initial;
+}
 
 article li{
     border: 2px inset rgba(77, 79, 80, 0.486);
@@ -75,6 +86,7 @@ article ul li:nth-last-of-type(1) {
 span a {
     color: rgb(241, 188, 12);
     text-shadow: 1px 1px rgb(0, 0, 0);
+    transition: all .5s ease;
 }
 
 li p a {
@@ -127,12 +139,24 @@ header img {
 
 a:hover {
     cursor: pointer;
-    font-size: 105%;
+    color: rgba(19, 7, 7, 0.876);
+
 }
 
 article ul li span a:hover, li p a:hover {
     font-size: initial;
     text-shadow: 2px 2px transparent;
+    color: rgba(190, 124, 16);
+}
+
+li.list, li.list:last-of-type {
+    background-color: initial;
+    list-style-type: disc;
+    padding: initial;
+    margin: initial;
+    border: none;
+    color: rgba(19, 7, 7, 0.876);
+    border-bottom: none;
 }
 
 @media screen and (max-width: 880px) {
@@ -149,7 +173,14 @@ article ul li span a:hover, li p a:hover {
     }
     header img {
         width: 25%;
-    }    
+    }
+
+    h4, .accordion-toggle, span a, span, article ul li span a:hover {
+        font-size: small;
+    }
+    .accordion-toggle:hover {
+        font-size: small;
+    }
 }
 @media screen and (max-width: 400px) {
     header nav ul {
