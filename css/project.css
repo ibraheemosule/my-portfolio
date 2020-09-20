@@ -58,6 +58,7 @@ a {
     width: 150px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
     color: rgb(26, 1, 1);
     font-weight: 600;
 }
