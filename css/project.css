@@ -58,6 +58,7 @@ a {
     width: 150px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
     color: rgb(26, 1, 1);
     font-weight: 600;
 }
@@ -153,9 +154,10 @@ article ul li span a:hover, li p a:hover {
 
 li.list, li.list:last-of-type {
     background-color: initial;
-    list-style-type: disc;
     padding: initial;
     margin: initial;
+    margin-bottom: 10px;
+    font-weight: lighter;
     border: none;
     color: rgba(19, 7, 7, 0.876);
     border-bottom: none;
@@ -213,3 +215,4 @@ li.list, li.list:last-of-type {
     .accordion-toggle:hover {
         font-size: x-small;
     }
+}
