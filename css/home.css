@@ -112,9 +112,19 @@ main article button {
     font-size: 130%;
     font-weight: 500;
     color: wheat;
+<<<<<<< HEAD
     background-color: rgb(0, 0, 0);
     padding: 2px 10px;
     padding-bottom: 4px;
+=======
+    background-color:  rgb(0, 0, 0);
+    padding: 2px 10px;
+    padding-bottom: 4px;
+    animation-name: opacity;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+>>>>>>> ba9b821a0c8350bbcb1fb7117c0a72b7346ea6ef
     cursor: pointer;
 }
 
@@ -179,7 +189,14 @@ div {
 }
 
 @media screen and (max-width: 400px) {
+<<<<<<< HEAD
     
+=======
+    nav ul {
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+>>>>>>> ba9b821a0c8350bbcb1fb7117c0a72b7346ea6ef
     header {
         font-size: 240%;
     }
