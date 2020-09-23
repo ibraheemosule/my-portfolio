@@ -20,7 +20,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <header>
+  
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -29,11 +29,14 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
-        <img src="images\ios.jpg" alt="my picture">
+
+        <main>
+        <header>
+        <!-- <img src="images\image.jpeg" alt="my picture"> -->
         <h1 class="resize">FRONTEND DEVELOPER </h1>
     </header>
 
-    <main>
+  
         <article>
             <p>Hi, Welcome to my page.</p>
             <p>My name is <span>Ibrahim Sule</span> and I'm a frontend Developer</p>
@@ -43,19 +46,19 @@
     </main>
 
 <script>
-    let show = document.getElementsByClassName('show')[0];
+    // let show = document.getElementsByClassName('show')[0];
 
-    function blink(element, timeout){
+    // function blink(element, timeout){
     
-        element.style.visibility = "visible";
-    let a = setTimeout(() => {
-            element.style.visibility = "hidden";
-        }, timeout);
-       let b =  setTimeout(() => {
-           blink(element, timeout)
-        }, timeout * 2);
-    };
-    blink(show, 500);
+    //     element.style.visibility = "visible";
+    // let a = setTimeout(() => {
+    //         element.style.visibility = "hidden";
+    //     }, timeout);
+    //    let b =  setTimeout(() => {
+    //        blink(element, timeout)
+    //     }, timeout * 2);
+    // };
+    // blink(show, 500);
 
 
 </script>
