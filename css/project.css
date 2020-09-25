@@ -1,20 +1,59 @@
+
+ /* a {
+    text-decoration: none;
+    color: inherit;
+} */
 * {
     box-sizing: border-box;
 }
 
 body {
-    color: wheat;
-    background-image: url(starblue.jpg);
+    color: black;
+    background-image: url(image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
     font-family: Lato, "Lucida Grande", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
     text-align: center;
-    font-size: 150%;
 }
+
+nav {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    margin-top: 0;
+    display: flex;
+    list-style-type: none;
+    font-size: 100%;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.693);
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+nav ul li{
+    cursor: pointer;
+    padding: 0.5%;
+    font-weight: 600;
+    height: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    color:  rgb(255, 255, 255);
+    transition: all .7s ease;
+}
+
+nav li:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
 
 h4 {
     display: inline-block;
@@ -27,8 +66,7 @@ h4 {
 
 a {
     text-decoration: none;
-    color: wheat;
-    transition: all .5s ease;
+    color: inherit;
 }
 
 .accordion-toggle {
@@ -69,7 +107,7 @@ article ul {
 
 article li{
     border: 2px inset rgba(77, 79, 80, 0.486);
-    background-color: rgba(255, 217, 0, 0.157);
+    background-color: rgba(255, 255, 255, 0.529);
     border-radius: 10px;
     border-bottom: none;
     padding: 3%;
@@ -87,8 +125,7 @@ article ul li:nth-last-of-type(1) {
     text-shadow: 0.5px 0.5px rgba(64, 112, 224, 0.513);
 }
 span a {
-    color: rgb(241, 188, 12);
-    text-shadow: 1px 1px rgb(0, 0, 0);
+    color: rgb(26, 1, 1);
     transition: all .5s ease;
 }
 
@@ -98,22 +135,26 @@ li p a {
 }
 
 main {
-    margin: 0 20% 0 20%;
+     background-color: rgba(255, 255, 255, 0.638);
+     margin-bottom: 0;
+     padding: 10% 20% 0 20%;
+     margin-top: 0;
 }
 
-main h1, h3 {
-    text-shadow: 2px 2px rgb(132, 81, 180);
+main h1 {
+    margin-top: 0;
 }
+
 h3 {
-    text-shadow: 2px 2px rgb(132, 81, 180);
     text-align: center;
 }
+
 main p {
     text-align: justify;
     text-indent: 5%;
     margin-top: -1%;
     color: rgba(19, 7, 7, 0.876);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -129,23 +170,6 @@ hr {
     margin-bottom: 50px;
 }
 
-header nav ul li {
-    text-shadow:  1px 1px rgb(132, 81, 180);
-}
-header img {
-
-    width: 12%;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-a:hover {
-    cursor: pointer;
-    color: rgba(19, 7, 7, 0.876);
-
-}
-
 article ul li span a:hover, li p a:hover {
     font-size: initial;
     text-shadow: 2px 2px transparent;
@@ -157,7 +181,7 @@ li.list, li.list:last-of-type {
     padding: initial;
     margin: initial;
     margin-bottom: 10px;
-    font-weight: lighter;
+    font-weight: 500;
     border: none;
     color: rgba(19, 7, 7, 0.876);
     border-bottom: none;
@@ -165,7 +189,7 @@ li.list, li.list:last-of-type {
 
 @media screen and (max-width: 880px) {
     main {
-        margin: 0 10% 0 10%;
+      padding: 10% 10% 0 10%;
     }
     header img {
         width: 20%;
@@ -185,14 +209,21 @@ li.list, li.list:last-of-type {
     .accordion-toggle:hover {
         font-size: small;
     }
+    article li{
+        border: 1px inset rgba(77, 79, 80, 0.486);
+    }
+    article ul li:nth-last-of-type(1) {
+        border-bottom: 1px inset rgba(77, 79, 80, 0.486);
+    }
 }
 @media screen and (max-width: 400px) {
     header nav ul {
         justify-content: space-between;
-        margin-right: 30px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     main {
-        margin: 0 5% 0 5%;
+        padding: 10% 5% 0 5%;
     }
     main h1 {
         font-size: 125%;

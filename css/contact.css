@@ -3,56 +3,67 @@
 }
 
 body {
-    color: wheat;
-    background-image: url(starred.jpg);
+    color: black;
+    background-image: url(image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
     font-family: Lato, "Lucida Grande", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-    text-align: center;
-    font-size: 150%;
+nav {
+    padding: 0;
+    margin: 0;
 }
 
-header h1 {
-    text-shadow: 3px 3px rgb(132, 81, 180);
-}
-
-
-header nav ul {
+nav ul {
+    margin-top: 0;
     display: flex;
     list-style-type: none;
     font-size: 100%;
     justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.693);
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-header nav ul li {
-    text-shadow:   1px 1px rgb(132, 81, 180);
-}
-header img {
-
-    width: 12%;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-header a {
-    text-decoration: none;
-    color: wheat;
+nav ul li{
+    cursor: pointer;
+    padding: 0.5%;
+    font-weight: 600;
+    height: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    color:  rgb(255, 255, 255);
     transition: all .7s ease;
 }
-header a:hover {
-    cursor: pointer;
-    color: rgb(83, 241, 136);
-    text-shadow: 1px 1px rgb(75, 60, 1);
+
+ a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 main {
-    margin: 0 20% 0 20%;
+    background-color: rgba(255, 255, 255, 0.597);
+    min-height: 100vh;
+    padding-top: 10%;
+    width: 100%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
-main h1 {
-    text-shadow: 2px 2px rgb(43, 41, 44);
+
+ a {
+    text-decoration: none;
+    color: white;
+    transition: all .7s ease;
 }
 
 article {
@@ -64,10 +75,11 @@ div {
     padding-top:20px;
     padding-bottom: 40px;
     text-align: center;
+    color: black;
     width: 20%;
-    border: 2px inset black;
+    border: 2px inset transparent;
     border-radius: 10px;
-    box-shadow: rgba(134, 70, 10, 0.472) 2px 2px 4px;
+    box-shadow: 1px 1px 2px rgba(134, 70, 10, 0.472);
 }
 article a {
     font-size: large;
@@ -76,42 +88,52 @@ article a {
     display: block;   
 }
 article button {
-    border: 2px inset rgba(43, 41, 44, 0.849);
+    /* border: 2px inset rgba(43, 41, 44, 0.849); */
     font-size: 150%;
-    color: wheat;
-    background-color: rgb(146, 65, 11);
+    background-color: black;
+    color: white;
     padding: 5% 15%;
     border-radius: 10%;
-    box-shadow: rgb(48, 24, 13) 2px 2px 1px;
-}
-button:hover {
-padding: 5% 20%;
+    transition: all 0.75s ease;
+    /* box-shadow: rgb(48, 24, 13) 2px 2px 1px; */
 }
 
+button:hover {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+@media screen and (min-height: 600px){
+    @media screen and (max-width: 600px) {
+        h1 {
+            margin-top: 40%;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        h1 {
+            margin-top: 30%;
+        }
+    }
+   
+}
 @media screen and (max-width: 942px) {
     main {
-        margin: 0 10% 0 10%;
+     padding-right: 10%;
+     padding-left: 10%;
     }
-    header img {
-        width: 20%;
-    }    
 }
 @media screen and (max-width: 710px) {
     article button {
         padding: 3% 6%;
     }
-    button:hover {
-        padding: 3% 8%;
-        }
 }
 @media screen and (max-width: 665px) {
     article {
-      display: block;
+      /* display: block; */
+      flex-flow: wrap;
+      justify-content: space-around;
     }
     div {
-        display: inline-block;
-        width: 35%;
-        margin: 7%;
+        width: 40%;
     }
 article p {
     font-size: small;
@@ -128,17 +150,13 @@ article p {
     }    
 }
 @media screen and (max-width: 400px) {
-    header nav ul {
+    nav ul {
         justify-content: space-between;
-        margin-right: 30px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
-    main {
-        margin: 0 5% 0 5%;
-    }
+
     main h1 {
         font-size: 125%;
-    }
-    header img {
-        width: 35%;
-    }    
+    }  
 }

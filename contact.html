@@ -13,17 +13,16 @@
         <link rel="stylesheet" href="css\contact.css">
     </head>
     <body>
-        <header>
+
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
                     <li><a href="project.html">PROJECTS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            <img src="images\picture3.jpg" alt="my picture">
-        </header>
+
         <main>
             <h1>CONTACT ME <hr> </h1>
             <article>
@@ -52,32 +51,32 @@
         
         <script>
 
-            var phone = document.getElementsByClassName("call")[0];
-            function show(){
-                phone.innerHTML = "+2348067153177"
-                phone.style.fontSize = "x-small";
-            };
-            phone.addEventListener("click", show);
+            // var phone = document.getElementsByClassName("call")[0];
+            // function show(){
+            //     phone.innerHTML = "+2348067153177"
+            //     phone.style.fontSize = "x-small";
+            // };
+            // phone.addEventListener("click", show);
 
-            let button = document.getElementsByTagName("div");
-            let color = ["rgb(46, 44, 43, 0.3)","rgb(146, 65, 11, 0.2)","rgb(48, 24, 13, 0.6)","rgba(2, 57, 82, 0.2)",
-            "rgb(63, 9, 2, 0.2)","rgb(0, 0, 0, 0.5)","rgba(27, 146, 11, 0.2)","rgba(145, 15, 134, 0.2)",
-            "rgba(113, 195, 6, 0.1)","rgba(245, 157, 245, 0.1)","rgba(81, 83, 180, 0.1)"];
+            // let button = document.getElementsByTagName("div");
+            // let color = ["rgb(46, 44, 43, 0.3)","rgb(146, 65, 11, 0.2)","rgb(48, 24, 13, 0.6)","rgba(2, 57, 82, 0.2)",
+            // "rgb(63, 9, 2, 0.2)","rgb(0, 0, 0, 0.5)","rgba(27, 146, 11, 0.2)","rgba(145, 15, 134, 0.2)",
+            // "rgba(113, 195, 6, 0.1)","rgba(245, 157, 245, 0.1)","rgba(81, 83, 180, 0.1)"];
 
-            setInterval(() => {
-                let num1 = Math.floor(Math.random()*11);
-                let num2 = Math.floor(Math.random()*11);
-                let num3 = Math.floor(Math.random()*11);
-                let num4 = Math.floor(Math.random()*11);
+            // setInterval(() => {
+            //     let num1 = Math.floor(Math.random()*11);
+            //     let num2 = Math.floor(Math.random()*11);
+            //     let num3 = Math.floor(Math.random()*11);
+            //     let num4 = Math.floor(Math.random()*11);
 
-                button[0].style.backgroundColor = color[num1];
-                button[1].style.backgroundColor = color[num2];
-                button[2].style.backgroundColor = color[num3];
-                button[3].style.backgroundColor = color[num4];
+            //     button[0].style.backgroundColor = color[num1];
+            //     button[1].style.backgroundColor = color[num2];
+            //     button[2].style.backgroundColor = color[num3];
+            //     button[3].style.backgroundColor = color[num4];
                 
-                console.log(num1);
+            //     console.log(num1);
 
-            }, 1000);
+            // }, 1000);
 
         </script>
     </body>

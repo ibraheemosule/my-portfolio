@@ -7,6 +7,7 @@ body {
     background-image: url(image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
     font-family: Lato, "Lucida Grande", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,6 +65,8 @@ nav ul li{
     font-weight: 600;
     height: 100%;
     margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
     color:  rgb(255, 255, 255);
     transition: all .7s ease;
 }
@@ -80,8 +83,8 @@ li:hover {
 
 main {
     background-color: rgba(255, 255, 255, 0.597);
+    min-height: 100vh;
     padding-top: 0.2%;
-    padding-bottom: 14%;
 }
 
 /* header img {
@@ -100,6 +103,9 @@ article {
     font-size: 140%;
     color: rgb(9, 1, 1);
     font-weight: 600;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article p span {
@@ -112,20 +118,15 @@ main article button {
     font-size: 130%;
     font-weight: 500;
     color: wheat;
-<<<<<<< HEAD
     background-color: rgb(0, 0, 0);
     padding: 2px 10px;
     padding-bottom: 4px;
-=======
-    background-color:  rgb(0, 0, 0);
-    padding: 2px 10px;
-    padding-bottom: 4px;
-    animation-name: opacity;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
->>>>>>> ba9b821a0c8350bbcb1fb7117c0a72b7346ea6ef
     cursor: pointer;
+    transition: all 0.75s ease;
+}
+
+main article button:hover {
+    background-color: rgba(0, 0, 0, 0.788);
 }
 
 div {
@@ -135,6 +136,19 @@ div {
     margin-left: auto;
 }
 
+@media screen and (min-height: 600px){
+    @media screen and (max-width: 600px) {
+        header {
+            margin-top: 40%;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        header {
+            margin-top: 30%;
+        }
+    }
+   
+}
 
 @media screen and (max-width: 770px) {
     header {
@@ -159,7 +173,7 @@ div {
     }
     header li {
         font-size: smaller;
-        font-weight: 500;
+        font-weight: 600;
     }
     header h1 {
         font-size: inherit;
@@ -170,33 +184,33 @@ div {
 }
 
 @media screen and (max-width: 485px) {
-    body {
+    /* body {
         background-image: none;
-    }
+    } */
     nav ul {
         justify-content: space-between;
         padding-left: 0.5%;
         padding-right: 0.5%;
-        background-color:  rgb(0, 0, 0);
-     
+        background-color: rga(128, 128, 128, 0.693);
     }
     nav ul li {
-        font-weight: 500;
+        font-weight: 600;
     }
-    header {
+
+    nav ul li:hover {
+        background-color: black;
+    }
+    /* header {
         font-size: 100%;
-    }
+    } */
 }
 
 @media screen and (max-width: 400px) {
-<<<<<<< HEAD
-    
-=======
     nav ul {
         justify-content: space-between;
-        margin-right: 30px;
+        padding-right: 2%;
+        padding-left: 2%;
     }
->>>>>>> ba9b821a0c8350bbcb1fb7117c0a72b7346ea6ef
     header {
         font-size: 240%;
     }
