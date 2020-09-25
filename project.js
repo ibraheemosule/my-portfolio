@@ -33,7 +33,7 @@ let button = document.getElementById('menu');
                 button.style.fontSize = "100%";
                 ul.style.paddingRight = "0px";
                 ul.style.paddingLeft = "0px";
-                for (let index = 0; index < li.length; index++) {
+                for (let index = 0; index < 5; index++) {
                 li[index].style.display="block";
                 li[index].style.paddingTop="2%";
                 li[index].style.paddingBottom="2%";
@@ -49,7 +49,7 @@ let button = document.getElementById('menu');
                     button.style.fontSize = "250%";
                 ul.style.paddingRight = "2%";
                 ul.style.paddingLeft = "2%";
-                for (let index = 0; index < li.length; index++) {
+                for (let index = 0; index < 5; index++) {
                 li[index].style.display="none";
                 }
                 };
