@@ -16,6 +16,7 @@
 
             <nav>
                 <ul>
+                    <button class="fa fa-bars" id="menu"></button>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT ME</a></li>
                     <li><a href="project.html">PROJECTS</a></li>
@@ -51,12 +52,38 @@
         
         <script>
 
-            // var phone = document.getElementsByClassName("call")[0];
-            // function show(){
-            //     phone.innerHTML = "+2348067153177"
-            //     phone.style.fontSize = "x-small";
-            // };
-            // phone.addEventListener("click", show);
+            let button = document.getElementById('menu');
+            let li = document.querySelectorAll('li');
+            let ul = document.getElementsByTagName('ul')[0];
+            let nav = document.getElementsByTagName('nav')[0];
+
+            const active = () => {
+                button.style.display = "none";
+                ul.style.paddingRight = "0px";
+                ul.style.paddingLeft = "0px";
+                for (let index = 0; index < li.length; index++) {
+                li[index].style.display="block";
+                li[index].style.borderBottom="1px solid rgba(255, 255, 255, 0.707)";
+                }
+            }
+            nav.addEventListener('mouseover', active);
+
+            const inactive = () => {
+                button.style.display = "inline-block";
+                ul.style.paddingRight = "2%";
+                ul.style.paddingLeft = "2%";
+                for (let index = 0; index < li.length; index++) {
+                li[index].style.display="none";
+                }
+            }
+            nav.addEventListener('mouseout', inactive);
+
+            var phone = document.getElementsByClassName("call")[0];
+            function show(){
+                phone.innerHTML = "+2348067153177"
+                phone.style.fontSize = "x-small";
+            };
+            phone.addEventListener("click", show);
 
             // let button = document.getElementsByTagName("div");
             // let color = ["rgb(46, 44, 43, 0.3)","rgb(146, 65, 11, 0.2)","rgb(48, 24, 13, 0.6)","rgba(2, 57, 82, 0.2)",

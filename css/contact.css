@@ -29,6 +29,15 @@ nav ul {
     padding-left: 0;
 }
 
+#menu {
+    border: none;
+    background-color: inherit;
+    color: white;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
 nav ul li{
     cursor: pointer;
     padding: 0.5%;
@@ -142,9 +151,17 @@ article p {
 }
 
 @media screen and (max-width: 500px) {
+    nav ul {
+        display: block;
+    }
+    #menu {
+        display: inline-block;
+    }
    nav ul li {
         font-size: small;
         font-weight: 600;
+        display: none;
+        text-align: center;
     }
     header img {
         width: 25%;
@@ -152,7 +169,7 @@ article p {
 }
 @media screen and (max-width: 400px) {
     nav ul {
-        justify-content: space-between;
+        /* justify-content: space-between; */
         padding-left: 2%;
         padding-right: 2%;
     }
