@@ -195,6 +195,7 @@ div {
     }
     nav ul li {
         font-weight: 600;
+        font-size: small;
     }
 
     nav ul li:hover {

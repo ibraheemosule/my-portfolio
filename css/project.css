@@ -20,7 +20,27 @@ body {
 
 header {
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
+main {
+    background-color: rgba(255, 255, 255, 0.693);
+    padding: 0 20% 0 20%;
+    margin-bottom: 0;
+    position: relative
+}
+
+main div {
+    text-align: center;
+}
+
+main p {
+    text-indent: 5%;
+    font-weight: 600;
+}
+
 
 nav {
     padding: 0;
@@ -50,10 +70,16 @@ nav ul li{
     transition: all .7s ease;
 }
 
+ a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav li:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-  }
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
 
 h4 {
     display: inline-block;
@@ -103,6 +129,7 @@ a {
 
 article ul {
     padding: initial;
+    margin-bottom: 0;
 }
 
 article li{
@@ -130,8 +157,7 @@ span a {
 }
 
 li p a {
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px rgba(241, 188, 12, 0.459);
+    color: rgb(22, 1, 1);
 }
 
 main {
@@ -139,10 +165,6 @@ main {
      margin-bottom: 0;
      padding: 10% 20% 0 20%;
      margin-top: 0;
-}
-
-main h1 {
-    margin-top: 0;
 }
 
 h3 {
@@ -157,23 +179,9 @@ main p {
     font-weight: 600;
 }
 
-
-header nav ul {
-    display: flex;
-    list-style-type: none;
-    font-size: 100%;
-    justify-content: space-around;
-}
-
 hr {
     margin-top: 30px;
     margin-bottom: 50px;
-}
-
-article ul li span a:hover, li p a:hover {
-    font-size: initial;
-    text-shadow: 2px 2px transparent;
-    color: rgba(190, 124, 16);
 }
 
 li.list, li.list:last-of-type {
@@ -187,22 +195,29 @@ li.list, li.list:last-of-type {
     border-bottom: none;
 }
 
+@media screen and (min-height: 600px){
+    @media screen and (max-width: 600px) {
+        h1 {
+            margin-top: 40%;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        h1 {
+            margin-top: 30%;
+        }
+    }
+   
+}
 @media screen and (max-width: 880px) {
     main {
       padding: 10% 10% 0 10%;
-    }
-    header img {
-        width: 20%;
     }    
 }
 @media screen and (max-width: 500px) {
     header li {
         font-size: small;
+        font-weight: 600;
     }
-    header img {
-        width: 25%;
-    }
-
     h4, .accordion-toggle, span a, span, article ul li span a:hover {
         font-size: small;
     }
@@ -227,19 +242,9 @@ li.list, li.list:last-of-type {
     }
     main h1 {
         font-size: 125%;
-    }
-    header img {
-        width: 35%;
-    }    
+    }   
 }
-@media screen and (max-width: 340px) {
-    header li {
-        font-size: x-small;
-    }
-    header img {
-        width: 25%;
-    }
-
+ @media screen and (max-width: 340px) {
     h4, .accordion-toggle, span a, span, article ul li span a:hover {
         font-size: x-small;
     }

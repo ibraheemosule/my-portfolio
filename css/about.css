@@ -15,12 +15,16 @@ body {
 
 header {
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 main {
     background-color: rgba(255, 255, 255, 0.693);
     padding: 0 20% 0 20%;
     margin-bottom: 0;
+    position: relative
 }
 
 main div {

@@ -142,8 +142,9 @@ article p {
 }
 
 @media screen and (max-width: 500px) {
-    header li {
+   nav ul li {
         font-size: small;
+        font-weight: 600;
     }
     header img {
         width: 25%;
