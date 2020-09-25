@@ -59,7 +59,8 @@
 
             const active = () => {
                 if(window.matchMedia("(max-width: 500px)").matches){
-                button.style.display = "none";
+                button.style.visibility = "hidden";
+                button.style.fontSize = "100%";
                 ul.style.paddingRight = "0px";
                 ul.style.paddingLeft = "0px";
                 for (let index = 0; index < li.length; index++) {
@@ -74,7 +75,8 @@
 
             const inactive = () => {
                 if(window.matchMedia("(max-width: 500px)").matches){
-                button.style.display = "inline-block";
+                    button.style.visibility = "visible";
+                    button.style.fontSize = "250%";
                 ul.style.paddingRight = "2%";
                 ul.style.paddingLeft = "2%";
                 for (let index = 0; index < li.length; index++) {
