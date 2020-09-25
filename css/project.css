@@ -243,6 +243,10 @@ li.list, li.list:last-of-type {
     nav ul li a {
         display: block;
     }
+    .home {
+        width: 85%;
+        margin-left: 15%;
+     }
     h4, .accordion-toggle, span a, span, article ul li span a:hover {
         font-size: small;
     }
