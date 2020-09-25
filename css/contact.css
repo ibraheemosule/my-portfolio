@@ -167,7 +167,10 @@ article p {
     }
     header img {
         width: 25%;
-    }    
+    }
+    nav ul li a {
+        display: block;
+    } 
 }
 @media screen and (max-width: 400px) {
     nav ul {

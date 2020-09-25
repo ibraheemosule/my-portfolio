@@ -53,6 +53,17 @@ nav ul {
     padding-left: 0;
 }
 
+#menu {
+    border: none;
+    background-color: inherit;
+    color: white;
+    display: none;
+    margin: 0;
+    padding: 0;
+    font-size: 250%;
+    display: none;
+}
+
 nav ul li{
     cursor: pointer;
     padding: 0.5%;
@@ -98,19 +109,32 @@ main ul {
     }    
 }
 @media screen and (max-width: 500px) {
+    header {
+        text-align: initial;
+    }
     header li {
         font-size: small;
     }
     header img {
         width: 25%;
-    }    
+    }  
+    nav ul {
+        display: block;
+    }
+    #menu {
+        display: inline-block;
+    }
+   nav ul li {
+        font-size: small;
+        font-weight: 600;
+        display: none;
+        text-align: center;
+    }
+    nav ul li a {
+        display: block;
+    }
 }
 @media screen and (max-width: 400px) {
-    header nav ul {
-        justify-content: space-between;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
     main {
         padding: 0 5% 0 5%;
     }

@@ -58,6 +58,17 @@ nav ul {
     padding-left: 0;
 }
 
+#menu {
+    border: none;
+    background-color: inherit;
+    color: white;
+    display: none;
+    margin: 0;
+    padding: 0;
+    font-size: 250%;
+    display: none;
+}
+
 nav ul li{
     cursor: pointer;
     padding: 0.5%;
@@ -214,9 +225,23 @@ li.list, li.list:last-of-type {
     }    
 }
 @media screen and (max-width: 500px) {
-    header li {
+    header {
+        text-align: initial;
+    }
+    nav ul {
+        display: block;
+    }
+    #menu {
+        display: inline-block;
+    }
+   nav ul li {
         font-size: small;
         font-weight: 600;
+        display: none;
+        text-align: center;
+    }
+    nav ul li a {
+        display: block;
     }
     h4, .accordion-toggle, span a, span, article ul li span a:hover {
         font-size: small;

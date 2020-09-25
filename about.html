@@ -9,12 +9,14 @@
         <title>ABOUT ME</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="css\about.css">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
+                    <button class="fa fa-bars" id="menu"></button>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT ME</a></li>
                     <li><a href="project.html">PROJECTS</a></li>
@@ -77,6 +79,41 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+<script>
 
+
+let button = document.getElementById('menu');
+            let li = document.querySelectorAll('li');
+            let ul = document.getElementsByTagName('ul')[0];
+            let nav = document.getElementsByTagName('nav')[0];
+
+            const active = () => {
+                if(window.matchMedia("(max-width: 500px)").matches){
+                button.style.display = "none";
+                ul.style.paddingRight = "0px";
+                ul.style.paddingLeft = "0px";
+                for (let index = 0; index < li.length; index++) {
+                li[index].style.display="block";
+                li[index].style.paddingTop="2%";
+                li[index].style.paddingBottom="2%";
+                li[index].style.borderBottom="1px solid rgba(255, 255, 255, 0.707)";
+                }
+                };
+            }
+            nav.addEventListener('mouseover', active);
+
+            const inactive = () => {
+                if(window.matchMedia("(max-width: 500px)").matches){
+                button.style.display = "inline-block";
+                ul.style.paddingRight = "2%";
+                ul.style.paddingLeft = "2%";
+                for (let index = 0; index < li.length; index++) {
+                li[index].style.display="none";
+                }
+                };
+            }
+            nav.addEventListener('mouseout', inactive);
+
+</script>
     </body>
 </html>
