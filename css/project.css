@@ -234,6 +234,7 @@ li.list, li.list:last-of-type {
     }
     nav ul {
         display: block;
+       background-color: rgba(128, 128, 128);
     }
     #menu {
         display: inline-block;
@@ -244,9 +245,6 @@ li.list, li.list:last-of-type {
         display: none;
         text-align: center;
     }
-nav ul li:hover {
-    background-color: black !important;
-}
     nav ul li a {
         display: block;
     }

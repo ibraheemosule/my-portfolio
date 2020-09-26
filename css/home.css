@@ -201,6 +201,7 @@ div {
     }
     nav ul {
         display: block;
+        background-color: rgba(128, 128, 128);
     }
     #menu {
         display: inline-block;
