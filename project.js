@@ -56,7 +56,7 @@ let button2 = document.getElementById('menu2');
 
                         index += 0.2;
                     }
-                }, 10);
+                }, 50);
                 };
             }
             button.addEventListener('click', active);
@@ -96,7 +96,7 @@ let button2 = document.getElementById('menu2');
                             li[0].style.display="none";
                         }
                     }
-                }, 10);
+                }, 20);
                 };
             }
             button2.addEventListener('click', inactive);
