@@ -58,7 +58,7 @@ nav ul {
     padding-left: 0;
 }
 
-#menu {
+#menu, #menu2  {
     border: none;
     background-color: inherit;
     color: white;
@@ -240,14 +240,12 @@ li.list, li.list:last-of-type {
         display: none;
         text-align: center;
     }
+nav ul li:hover {
+    background-color: black !important;
+}
     nav ul li a {
         display: block;
     }
-    .home {
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-     }
     h4, .accordion-toggle, span a, span, article ul li span a:hover {
         font-size: small;
     }

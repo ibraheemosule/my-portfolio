@@ -59,7 +59,7 @@ nav ul {
     margin-bottom: 0;
 }
 
-#menu {
+#menu, #menu2  {
     border: none;
     background-color: inherit;
     color: white;
@@ -210,11 +210,6 @@ div {
     nav ul li a {
         display: block;
     }
-    .home {
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-     }
 }
 
 @media screen and (max-width: 485px) {
