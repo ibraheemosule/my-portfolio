@@ -118,7 +118,7 @@ let button = document.getElementById('menu');
 
                         index += 0.2;
                     }
-                }, 10);
+                }, 5);
                 };
             }
             nav.addEventListener('mouseover', active);
@@ -129,34 +129,9 @@ let button = document.getElementById('menu');
                     button.style.fontSize = "250%";
                 ul.style.paddingRight = "2%";
                 ul.style.paddingLeft = "2%";
-                // for (let index = 0; index < 4; index++) {
-                // li[index].style.display="none";
-                // }
-                 let index = 1;
-                setInterval(() => {
-                    if(index >= 0){
-                        ul.style.opacity=index;
-                        li[0].style.opacity = index;
-                        li[1].style.opacity = index;
-                        li[2].style.opacity = index;
-                        li[3].style.opacity = index;
-
-                        li[0].style.backgroundColor = "rgba(128, 128, 128, 0.693)";
-                        li[1].style.backgroundColor = "rgba(128, 128, 128, 0.693)";
-                        li[2].style.backgroundColor = "rgba(128, 128, 128, 0.693)";
-                        li[3].style.backgroundColor = "rgba(128, 128, 128, 0.693)";
-
-                        console.log(index);
-                        if(index < 0.1){
-                            li[0].style.display="none";
-                             li[1].style.display="none";
-                              li[2].style.display="none";
-                               li[3].style.display="none";
-                               console.log("thi");
-                        };
-                        index -= 0.2;
-                    };
-                }, 10);
+                for (let index = 0; index < 4; index++) {
+                li[index].style.display="none";
+                }
                 };
             }
             nav.addEventListener('mouseout', inactive);
