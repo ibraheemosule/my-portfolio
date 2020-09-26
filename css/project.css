@@ -225,6 +225,10 @@ li.list, li.list:last-of-type {
     }    
 }
 @media screen and (max-width: 500px) {
+    body {
+        background-image: none;
+        background-color: rgba(128, 128, 128, 0.693);
+    }
     header {
         text-align: initial;
     }
