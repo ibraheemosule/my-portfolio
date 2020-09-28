@@ -209,12 +209,14 @@ li.list, li.list:last-of-type {
 @media screen and (min-height: 600px){
     @media screen and (max-width: 600px) {
         h1 {
-            margin-top: 40%;
+            padding-top: 40%;
+            margin-top: 0;
         }
     }
     @media screen and (max-width: 800px) {
         h1 {
-            margin-top: 30%;
+            padding-top: 30%;
+            margin-top: 0;
         }
     }
    
@@ -234,6 +236,8 @@ li.list, li.list:last-of-type {
     }
     main h1 {
         font-size: 125%;
+        margin-top: 0;
+        padding-top: 10%;
     } 
     header {
         text-align: initial;
