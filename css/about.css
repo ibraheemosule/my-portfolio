@@ -24,7 +24,7 @@ main {
     background-color: rgba(255, 255, 255, 0.693);
     padding: 0 20% 0 20%;
     margin-bottom: 0;
-    position: relative
+    position: relative;
 }
 
 main div {
@@ -113,6 +113,12 @@ main ul {
         background-image: none;
         background-color: rgba(128, 128, 128, 0.693);
     }
+    main {
+        padding: 0 5% 10% 5%;
+    }
+    main h1 {
+        font-size: 125%;
+    }
     header {
         text-align: initial;
     }
@@ -140,12 +146,7 @@ main ul {
     }
 }
 @media screen and (max-width: 400px) {
-    main {
-        padding: 0 5% 0 5%;
-    }
-    main h1 {
-        font-size: 125%;
-    }
+    
     header img {
         width: 35%;
     }    
